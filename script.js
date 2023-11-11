@@ -48,8 +48,7 @@ function filtrarPesquisa() {
 const btnCategoria = document.querySelectorAll('.superior__item');
 
 btnCategoria.forEach((btn) => {
-    let nomeCategoria = btn.getAttribute('name');
-    btn.addEventListener('click', () => filttrarPorCategoria(nomeCategoria));
+    btn.addEventListener('click', () => filtrarPorCategoria(btn.getAttribute('name')));
 })
 
 function filtrarPorCategoria(filtro) {
